@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+}
+
+.cards{
+    position: absolute;
+    /* top and bottom decides the positon of card independently when position is absolute */
+    top: 50%;
+    left: 50%;
+    height: 280px;
+    width: 200px;
+    border: 2px solid salmon;
+    border-radius: 20px;
+    overflow: hidden;
+}
+#card1{
+    /* for shifting the card center to the main center */
+    transform: translate(-50% , -50%); 
+    z-index: 4;
+}
+/* #card1 :hover{
+    z-index: 100;
+} */
+#card2{
+    transform: translate(-50% , -50%) rotate(-7deg);
+    z-index: 3;
+  
+}
+#card2:hover{
+    z-index: 5;
+}
+#card3{
+
+    z-index: 2;
+    transform: translate(-50% , -50%) rotate(-14deg) ;
+}
+#card3:hover{
+    z-index: 5;
+}
+#card4{
+    z-index: 1;
+    transform: translate(-50% , -50%) rotate(-21deg) ;
+    
+}
+#card4:hover{
+    z-index: 5;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
