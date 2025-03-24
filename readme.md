@@ -1,0 +1,1 @@
+This is a normal practice game based on html and css
